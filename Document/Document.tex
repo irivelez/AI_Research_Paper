@@ -34,7 +34,6 @@ authoryear]{elsarticle} %review=doublespace preprint=single 5p=2 column
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
 
-\usepackage{graphicx}
 \ifxetex
   \usepackage[setpagesize=false, % page size defined by xetex
               unicode=false, % unicode breaks when used with xetex
@@ -45,7 +44,7 @@ authoryear]{elsarticle} %review=doublespace preprint=single 5p=2 column
 \hypersetup{breaklinks=true,
             bookmarks=true,
             pdfauthor={},
-            pdftitle={Short Paper},
+            pdftitle={A view of the economic implications of AI as a potential General Purpose Technology},
             colorlinks=false,
             urlcolor=blue,
             linkcolor=magenta,
@@ -54,63 +53,11 @@ authoryear]{elsarticle} %review=doublespace preprint=single 5p=2 column
 \setcounter{secnumdepth}{5}
 % Pandoc toggle for numbering sections (defaults to be off)
 
-% Pandoc syntax highlighting
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 % tightlist command for lists without linebreak
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-% From pandoc table feature
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
-% Correct order of tables after \paragraph or \subparagraph
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
-\makeatother
-% Allow footnotes in longtable head/foot
-\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
-\makesavenoteenv{longtable}
 
 
 
@@ -122,34 +69,37 @@ authoryear]{elsarticle} %review=doublespace preprint=single 5p=2 column
 
 \begin{frontmatter}
 
-  \title{Short Paper}
-    \author[Some Institute of Technology]{Irina Vélez%
+  \title{A view of the economic implications of AI as a potential
+General Purpose Technology}
+    \author[University of Helsinki]{Irina Vélez%
   \corref{cor1}%
   \fnref{1}}
-   \ead{alice@example.com} 
-    \author[Another University]{Otto Palkama%
+   \ead{irina.velezlopez@helsinki.fi} 
+    \author[Aalto University]{Otto Palkama%
   %
   \fnref{1}}
-   \ead{bob@example.com} 
-      \affiliation[Some Institute of Technology]{
-    organization={Big Wig University},addressline={1 main
-street},city={Gotham},postcode={123456},state={State},country={United
-States},}
-    \affiliation[Another University]{
-    organization={Department},addressline={A street
-29},city={Manchester,},postcode={2054 NX},country={The Netherlands},}
-    \cortext[cor1]{Corresponding author}
-    \fntext[1]{This is the first author footnote.}
-    \fntext[2]{Another author footnote.}
+   \ead{otto.palkama@aalto.fi} 
+      \cortext[cor1]{Corresponding author}
+    \fntext[1]{Exchange Student.}
   
   \begin{abstract}
-  This is the abstract.
-
-  It consists of two paragraphs.
+  This paper explores the potential of artificial intelligence (AI) and
+  Language Models (LLMs) as general-purpose technologies (GPTs) that can
+  drive growth and development. The generalization of tools,
+  particularly in the realm of AI, enhances the potential for
+  productivity improvements and opens up new possibilities for value
+  creation. However, there can be a discrepancy between optimistic
+  expectations and actual outcomes, which is a natural aspect of
+  transformative periods. The paper discusses the coexistence of
+  forward-looking optimism and backward-looking disappointment and
+  emphasizes the time required for society to fully integrate and
+  benefit from new technologies. It concludes by highlighting the
+  importance of grounded expectations and the value of intangible assets
+  in the process of economic transition.
   \end{abstract}
     \begin{keyword}
-    keyword1 \sep 
-    keyword2
+    General Purpose Technology \sep Artificial Intelligence \sep 
+    Creative destruction
   \end{keyword}
   
  \end{frontmatter}
@@ -157,51 +107,35 @@ States},}
 \hypertarget{introduction}{%
 \section{1. Introduction}\label{introduction}}
 
-The idea is to explore how the use of Large Language Models (LLMs) as
-General Purpose Technology (GPT) could reshape industries, considering
-the generalization capabilities of LLMs and the rapid adoption of these
-tools by the public and firms.
+The generalization of tools is a crucial factor in harnessing the
+potential for growth and development. When a tool can be widely used for
+various purposes, its value increases significantly. In the realm of
+artificial intelligence (AI), Language Models (LLMs) serve as a
+foundational technology for other tools, such as AI-powered software.
+This opens up new possibilities and enhances the potential for
+productivity improvements in the workforce. As mentioned by
+\citep{gptaregpts}, LLMs like GPTs exhibit characteristics of
+general-purpose technologies, which can have profound economic, social,
+and policy implications.
 
-A. Background on the potential economic impact of Large Language Models
-(LLMs) as General Purpose Technology (GPT) B. Objective of the paper:
-Exploring how the use of LLMs as GPT could reshape industries and
-contribute to economic growth
+The emergence of new capabilities and the widespread adoption of LLMs as
+enablers of new AI-based tools, coupled with the increasing number of
+users utilizing tools like ChatGPT, signifies a future that has not been
+seen before. This accelerated expansion and pushing of boundaries and
+limits hold the potential for transformative changes.
 
-Generalization of tools seems to be an important characteristic to
-leverage the potential of growth and development, because if a same tool
-could be broad use for different purposes, so the tool becomes in a very
-valuable tool.
-
-Until now the abilities reached by the Large Languages Models LLMs have
-arisen to a certain level of computational power that might require
-scaling up past this threshold (10\^{}23 training FLOPs), meaning that
-they are able to perform multiple tasks related to Text Understanding
-and Generation,Problem Solving and Mathematics, Image and Data
-Classification, Text Analysis and Comprehension, and so on, but as
-\citep{weiemergent} suggested for future works, it could be possible new
-abilities could emerge scaling up the models and understanding how
-emergence occurs would provide new insights into how to train
-more-capable language models.
-
-On the other hand, the use of LLMs as a base technology of other tools,
-such as software-AI powered, open a new window and enveloped the
-potential of productivity improvements of the work-human force or human
-capital as it was mention by \citep{gptaregpts} telling that LLMs such
-as GPTs exhibit traits of general-purpose technologies, could have
-considerable economic, social, and policy implications.
-
-So, the potential arising of emergent abilities and the wide use of LLMs
-as enablers of new tools (AI based-software) alongside the spread use of
-tools such as ChatGPT by a large amount of humans (here: million of
-users of chatGPT), it could signify a future unseen before by the human
-beings, because the expansion and pushing of new boarders and limits
-would be accelerated.
+In light of these dynamics, it is important to recognize that while
+there may be optimism surrounding new technologies, there can also be a
+discrepancy between expectations and actual outcomes. This coexistence
+of forward-looking optimism and backward-looking disappointment is a
+natural aspect of periods of transformative change. It reflects the
+human desire to witness the fulfillment of expectations within their
+lifetime, while also acknowledging the time required for society to
+fully integrate and benefit from these innovations.
 
 \hypertarget{generalization-capabilities-of-llms-as-gpt}{%
 \section{2. Generalization Capabilities of LLMs as
 GPT}\label{generalization-capabilities-of-llms-as-gpt}}
-
-A. Examining the adoption rate of previous GPTs
 
 Investigating the adoption rate of various GPTs, \citep{Chen2021HowDL}
 examined how worker mobility affects the likelihood of an establishment
@@ -217,8 +151,19 @@ for economic progress. The author further demonstrates that the stepwise
 adoption of a GPT across sectors leads to a dual-phase cycle, ultimately
 resulting in prolonged economic growth.
 
-B. Key factors contributing to the widespread adoption of a technology
-as a GPT
+\hypertarget{key-factors-contributing-to-the-widespread-adoption-of-a-technology-as-a-gpt}{%
+\subsection{Key factors contributing to the widespread adoption of a
+technology as a
+GPT}\label{key-factors-contributing-to-the-widespread-adoption-of-a-technology-as-a-gpt}}
+
+General Purpose Technology is a transformative technology with a strong
+improvement process at the begining and eventually becoming widely
+adopted for its multiples uses, while producing many spillover effects
+\citep{paradox}. As such, it have a pervasive impact on society as a
+whole, mainly due to its capability to redefine the ways in which
+businesses operate, improve productive and contribute to long-term
+economic growth. Some well-know examples are steam power, electricity,
+semiconductors, and internet.
 
 The study by \citep{Qiu2018TheIG} observes a trend towards
 internationalized innovation networks in multinational corporations.
@@ -232,7 +177,17 @@ large establishments in their vicinity, and heightened experimentation
 with analytics technology exhibit a particularly healthy environment for
 the widespread adoption of a technology as a GPT.
 
-C. Reviewing the literature on the potential of AI as a GPT
+Until now the abilities reached by the Large Languages Models LLMs have
+arisen to a certain level of computational power that might require
+scaling up past this threshold (10\^{}23 training FLOPs), meaning that
+they are able to perform multiple tasks related to Text Understanding
+and Generation,Problem Solving and Mathematics, Image and Data
+Classification, Text Analysis and Comprehension, and so on, but as
+\citep{weiemergent} suggested for future works, it could be possible new
+abilities could emerge scaling up the models and understanding how
+emergence occurs would provide new insights into how to train
+more-capable language models. The emergence of these skills are one of
+the key factors of becoming in a GPT.
 
 Artificial intelligence a term coined by emeritus Stanford Professor
 John McCarthy in 1955, was defined by him as ``the science and
@@ -259,62 +214,25 @@ analyzing and learning from these examples, machine learning systems can
 identify patterns and make accurate predictions or classifications
 without explicit programming instructions.
 
-General Purpose Technology is a transformative technology with a strong
-improvement process at the begining and eventually becoming widely
-adopted for its multiples uses, while producing many spillover effects
-\citep{paradox}. As such, it have a pervasive impact on society as a
-whole, mainly due to its capability to redefine the ways in which
-businesses operate, improve productive and contribute to long-term
-economic growth. Some well-know examples are steam power, electricity,
-semiconductors, and internet.
-
-Is it the AI a General Purpose Technology?
-
 \hypertarget{what-is-the-potential-economic-impact-of-ai}{%
-\section{3. What is the potential Economic Impact of
+\section{3. What is the potential economic impact of
 AI?}\label{what-is-the-potential-economic-impact-of-ai}}
 
-What we are trying to do is following:
+Considering the potential of AI as a new GPT, assessing its possible
+contribution to economic growth is worthwhile in times of dizzying
+change such as the present. The winds of uncertainty are blowing
+everywhere and it would be useful to set expectations. Given the
+conditions of uncertainty and the low accuracy of predictions, the
+assessment of its potential impact seems to be addressed only by a
+retrospective approach, which means that the performance of previous
+general-purpose technologies, such as steam power, electricity or the
+Internet, could provide a more realistic answer to this question.
 
-So, during times of structural changes as now, is difficult to see the
-results of this new technologies, because the contributions in growth
-that the successfull firms could make as offset by the decreases profits
-of the outgoing firms. And this is why I think that the statistics is
-not yet reflecting the potential benefits of the use of AI.
-
-This can be ilustrated in Figure N, where the increases in investment,
-are still not reflecting their fruits in increasings in the total factor
-of productivity TFP.
-
-\begin{itemize}
-\tightlist
-\item
-  Graph of Investments during the last 10 years and TFP in the US.
-  -Index of readiness to use AI by country
-\end{itemize}
-
-The intangible assets associated with the last wave of computerization
-were about ten times as large as the direct investments in computer
-hardware itself. paradox We think it is plausible that AI-associated
-intangibles could be of a comparable or greater magnitude.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-Considering the potential of the AI as a new GPT, specifically the LLMs,
-assessing its potential contribution to the economic growth is worthy
-during fast-pace changing times as now. The uncertainty's winds are
-everywhere and setting expectations might be useful. Given the
-uncertainty condition and the poor accuracy of predictions, assessing
-its potential impact seems to be address only by a retrospective
-approach, what it means that the performance of previous General Purpose
-Technology like steam power, electricity or internet, might give a more
-realistic answer to this question.
-
-However, this topic have already addressed by \citep{paradox} and
-\citep{Nicholas}, in a context where are optimists and pessimists about
-technology and growth. It arises a genuine dichotomy between higher
-profit expectations of forward looking entrepreneurs, and the poor
-growth performance reflected in the the backward looking statistics.
+However, this topic has already been addressed by \citep{paradox} and
+\citep{Nicholas}, in a context where there are optimists and pessimists
+about technology and growth. A real dichotomy emerges between the higher
+profit expectations of forward-looking entrepreneurs and the poor growth
+performance reflected in retrospective statistics.
 
 One example mentioned by \citep{paradox} is the call center industry,
 which had approximately 2.2 million agents in 2015 in the United States.
@@ -333,56 +251,59 @@ statistics.
 \caption{\label{fig1}Number on contact center employees in the United States from 2014 to 2022.}\label{fig:fig1}
 \end{figure}
 
-As \citep{paradox} explain, this apparent incongruence relies on the
-time lag between the technology creation and the full realization of its
-benefits on the economy and society. It takes time to build the stock of
-the new technology, develop the necessary human capital skillset,
-undergo the re-engineering process of business process transformations,
-and develop complementary innovations for its full realization in the
-real economy.
+As \citep{paradox} explains, this apparent incongruity is due to the
+time lag between the creation of the technology and the full realization
+of its benefits in the economy and society. It takes time to build up
+the stock of the new technology, develop the necessary human capital
+skill set, undergo the process of re-engineering business process
+transformations, and develop complementary innovations for full
+realization in the real economy.
 
-To support this lag explanation, the Schumpeterian Growth Model might
-give another good perspective, taking as a starting point that real
-contributions to growth are value creation and cost optimization, so the
-AI should be at the service of those growth contributors.
+To support this explanation of the lag, the Schumpeterian growth model
+could offer another good perspective, taking as a starting point that
+the real contributions to growth are value creation and cost
+optimization, so AI should be at the service of these contributors to
+growth.
 
-\hypertarget{gauging-the-potential-economic-impact-of-ai-in-terms-of-value-creation-and-cost-optimization}{%
-\subsection{Gauging the potential economic impact of AI in terms of
+\hypertarget{assessing-the-potential-economic-impact-of-ai-in-terms-of-value-creation-and-cost-optimization.}{%
+\subsection{Assessing the potential economic impact of AI in terms of
 value creation and cost
-optimization}\label{gauging-the-potential-economic-impact-of-ai-in-terms-of-value-creation-and-cost-optimization}}
+optimization.}\label{assessing-the-potential-economic-impact-of-ai-in-terms-of-value-creation-and-cost-optimization.}}
 
-From an economic perspective, one of the fundamental problems to
-understand the firm's behavior is the look for profit maximization by
-firms. This goal drives the economic growth and leads to two main
+From an economic perspective, one of the fundamental problems in
+understanding corporate behavior is the pursuit of profit maximization
+by firms. This objective drives economic growth and leads to two main
 objectives in the private business sector: adjusting the production
-function to come up with the right quantities to supply the market,
-while facing constraints, often in the form of a limited budget.
+function to obtain the right quantities to supply the market, while
+coping with constraints, often in the form of a limited budget.
 
-The profit maximization firm's goal can be represented as follows: \[
+The firm's goal of maximizing profits can be represented as follows: \[
 Profit = Total \ Income - Total \ Costs: \Pi = PX - C(X)
 \] \[
 Maximization \ Problem: \max_{x} \Pi(X) = PX - (wL + rK)
-\] Where PX represents the revenue generated by the production function
-X, and C(X) represents the corresponding costs associated to the costs
-of labor and capital. Thus, on one side of the coin, value creation
-contributes to increase profits by adjusting the outcome of the
-production function X, while on the other side, cost optimization aims
-to mitigate not only budget restrictions, but also limited resources.
-Therefore, AI should be directed towards achieving one or both of these
-goals in order to promote growth.
+\]
 
-To exemplify AI value creation, consider the use of deep neural network
-systems in diagnosing skin cancer \citep{cancer}, detecting fraud and
-assessing risks in the financial sector, and automating inventory
-forecasting, as seen in Amazon's AI-Powered Inventory Management. On the
-other hand, from a cost optimization perspective, AI is employed in
+Where PX represents the revenue generated by production function X, and
+C(X) represents the corresponding costs associated with labor and
+capital costs. Thus, on one side of the coin, value creation contributes
+to increasing profits by adjusting the output of production function X,
+while on the other side, cost optimization aims to mitigate not only
+budget constraints but also resource constraints. Therefore, AI must be
+oriented towards achieving one or both of these objectives to promote
+growth.
+
+To exemplify value creation through AI, consider the use of deep neural
+network systems in skin cancer diagnosis \citep{cancer}, fraud detection
+and risk assessment in the financial sector, and inventory forecasting
+automation, as seen in Amazon's AI-powered inventory management product.
+On the other hand, from a cost optimization perspective, AI is used in
 predictive maintenance and quality control to anticipate equipment
 failures\footnote{Available at:
   https://www.ge.com/research/project/predictive-maintenance}.
 
-\hypertarget{the-shumpenters-concept-of-creative-destruction}{%
-\subsection{The Shumpenter's concept of creative
-destruction}\label{the-shumpenters-concept-of-creative-destruction}}
+\hypertarget{shumpenters-concept-of-creative-destruction}{%
+\subsection{Shumpenter's concept of creative
+destruction}\label{shumpenters-concept-of-creative-destruction}}
 
 Creative destruction refers to the process of creating and developing
 new technology that continuously disrupt and replace the existing
@@ -390,37 +311,39 @@ obsolete technology in order to drive economic progress and
 growth.\footnote{Definition created with the help of
   \href{https://github.com/mukulpatnaik/researchgpt.git}{ResearchGPT}}.
 
-So, consider 2 types of firms, whose are creators of new technology and
-great investors in Research and Development R\&D, such as big-tech
-players like Apple, Amazon, Meta or Google, let's called Technology
-``Creators'', and on the other side, firms which adopt and implement the
-new technology in order to maximize their profits through the more value
-added created by their production functions and cost optimization, or
-both, let's called Technology ``Adopters''.
+Thus, let us consider two types of companies, those that are creators of
+new technologies and major investors in R\&D, such as the big technology
+companies like Apple, Amazon, Meta or Google, called ``creators'' of
+technology, and on the other hand, companies that adopt and implement
+the new technology in order to maximize their profits through the
+greater added value created by their production functions and cost
+optimization, or both, called ``adopters'' of technology.
 
 Knowledge or innovation is considered a \textbf{public good}, one you
-have invented something , it becomes almost free of charge to
-disseminate it through the world. So, the first initial cost of
-producing the technology have to be covered through monopolistic profits
-(Creators), because this have been the mechanism that the market system
-have found to coverage the huge initial costs.{[}\^{}4{]}
+have invented something , it is almost free to spread it around the
+world. Thus, the first initial cost of producing the technology has to
+be covered through monopoly profits (Creators), because this has been
+the mechanism that the market system has found to cover the huge initial
+costs\footnote{Insights taken from this
+  \href{https://youtu.be/m3nkTrFF2zs?si=dgPJlvVgQuuQAcL8}{Bilkent
+  Üniversitesi lecture}}.
 
-Once, the new technology have been released broadly to the market almost
-in an affordable price or even free as the case of ChatGPT, the
-adopter's maturity or readiness level require to be elevated in order to
-leverage the full potential of the new technology. It takes time from
-the adopter's perspective evolve to be able to incorporate the new
-technology in their business process in an effective way such as it
-produces benefits to the firm. This evolution requires developing new
-business process, adjust their production funtions to add value to their
-outcome and reallocate the skillset human capital who are able to
-address the transformation.
+Once the new technology has been widely launched in the market at an
+almost affordable or even free price, as in the case of ChatGPT, the
+maturity level or readiness of the adopter must be high in order to take
+advantage of the full potential of the new technology. From the
+adopter's point of view, it takes time to evolve and incorporate the new
+technology into their business process in a way that is effective and
+beneficial to the business. This evolution requires developing new
+business processes, adjusting their production functions to add value to
+their bottom line, and reallocating skilled human capital to address the
+transformation.
 
-The destruction is represented in the Schumpeterian Growth Model as the
-expected years that firms will remain in the market, if they don't
-adapt. And this adaptation process is promoted mainly for the creation
-of new ideas E{[}A{]}. This time is represented in the following
-equation as follows:
+Destruction is represented in the Schumpeterian Growth Model as the
+expected years that firms will remain in the market, if they do not
+adapt. And this adaptation process is mainly promoted by the creation of
+new ideas E{[}A{]}. This time expectation is represented by the
+following equation
 
 \[
 Firm \ Lifetime: E[\tau] = 1/E[A]
@@ -428,26 +351,36 @@ Firm \ Lifetime: E[\tau] = 1/E[A]
 Firm \ Lifetime: E[\tau] = 1/\gamma N
 \] Where: New ideas corresponds to \(E[A] = \gamma N\)
 
-The firm lifetime is reduced by the increasing of productivity (gamma)
-and the deployment of new technologies (N). This lead us to two
-transitional scenarios: 1. If the adopter are not able to incorporate
-the new technologies or take advantage of it, their profit will be
-diminishing until a possible exit of the market, when its profits will
-be zero, and thus, this firm will not contribute to the growth of the
-economy 2. If the adopter firm are able to incorporate the new
-technology or take advantage of it, their profit will increase, which in
-turn assurance their permanence in the market. However, this profit is
-not inmediatly reflected in the accounting aggregate statistics. The
-adaptation process takes time, due to development of new business
-processes, the up-skillet of their human capital, the time required for
-the reallocation of a more skillset human capital from firms less
-capable to firms with more potential to growth or success.
+The life of the company is reduced by the increase in productivity
+(\(\gamma\)) and the deployment of new technologies (N). This leads to
+two transition scenarios
 
-The number of AI related job postings has increased on average from
-1.7\% in 2021 to 1.9\% in 2022 according to \citep{reportAI}. This
-increased trend can be seen in Figure \ref{fig2}. In 2022, the top three
-countries with the higher percentage of AI job postings were the United
-States (2.1\%), Canada (1.5\%), and Spain (1.3\%).
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  If the adopter is not able to incorporate the new technologies or take
+  advantage of them, its profit will be decreasing until a possible exit
+  from the market, when its profits will be zero, and therefore, this
+  company will not contribute to the growth of the economy.
+\item
+  If the adopting company is able to incorporate the new technology or
+  take advantage of it, its profit will increase, which in turn will
+  ensure its permanence in the market. However, this benefit is not
+  immediately reflected in the aggregate accounting statistics. The
+  adaptation process takes time, due to the development of new business
+  processes, to the improvement of the qualification of its human
+  capital, to the time required for the reallocation of more qualified
+  human capital from less capable companies to companies with more
+  potential for growth or success.
+\end{enumerate}
+
+This reallocation of human capital can be seen in one of the key
+statistics in the labor market: Job postings.The number of AI related
+job postings has increased on average from 1.7\% in 2021 to 1.9\% in
+2022 according to \citep{reportAI}. This increased trend can be seen in
+Figure \ref{fig2}. In 2022, the top three countries with the higher
+percentage of AI job postings were the United States (2.1\%), Canada
+(1.5\%), and Spain (1.3\%).
 
 \begin{figure}
 
@@ -458,15 +391,18 @@ States (2.1\%), Canada (1.5\%), and Spain (1.3\%).
 \caption{\label{fig2} Percentage of all job postings that require some kind of AI skill by Geographic Area, 2014 to 2022.}\label{fig:fig2}
 \end{figure}
 
-So, during times of structural changes as now, is difficult to see the
-results of this new technologies, because the contributions in growth
-that the successfull firms could make as offset by the decreases profits
-of the outgoing firms. And this is why I think that the statistics is
-not yet reflecting the potential benefits of the use of AI.
+Thus, in times of structural change such as the present, it is difficult
+to see the results of these new technologies, as the contributions to
+growth that successful firms might make are offset by the declining
+profits of outgoing firms. Therefore, it is reasonable to think that the
+statistics do not yet reflect the potential benefits of using AI.
 
-This can be illustrated in Figure \ref{fig3}, where the increases in
-investment, are still not reflecting their fruits in increasings in the
-total factor of productivity TFP.
+This can be illustrated by reviewing the investments in AI over the last
+decade and the historical behavior of the Multiple Factor of
+Productivity. Figure \ref{fig3} shows an upward trend in global AI
+investments over the last decade, with the exception of 2022, when, for
+the first time since 2013, global business investment in AI has
+declined.
 
 \begin{figure}
 
@@ -476,6 +412,9 @@ total factor of productivity TFP.
 
 \caption{\label{fig3}Global Corporate Investment in AI by Investment Activity, 2013 to 2022.}\label{fig:fig3}
 \end{figure}
+
+However, these investments are not yet paying off in increases in the
+productivity multiple factor, as can be seen in Figure 4 and Figure 5.
 
 \begin{verbatim}
 ## 
@@ -494,69 +433,90 @@ total factor of productivity TFP.
 ##     intersect, setdiff, setequal, union
 \end{verbatim}
 
+\begin{figure}
+
+{\centering \includegraphics{Document_files/figure-latex/fig4-1} 
+
+}
+
+\caption{\label{fig4}Annual change of Multi Factor Productivity by OECD Country, 1996 to 2022.}\label{fig:fig4}
+\end{figure}
+
+Figure \ref{fig5} shows a decreasing trend in multifactor productivity
+since 1996, but this trend has not changed despite investments in AI
+since 2013. Therefore, this is an indicator that new technologies such
+as AI has not yet reflected its benefits in the economy.
+
 \begin{verbatim}
 ## `geom_smooth()` using formula = 'y ~ x'
 \end{verbatim}
 
-\includegraphics{Document_files/figure-latex/plot_TFP-1.pdf}
+\begin{figure}
 
-\begin{itemize}
-\tightlist
-\item
-  Graph of Investments during the last 10 years and TFP in the US.
-\end{itemize}
+{\centering \includegraphics{Document_files/figure-latex/fig5-1} 
 
-A country with an amount R of resources can destine some of them
-(Creators) toward doing R\&D, while others (Adopters) to produce a
-certain level of activity or outcome X.
+}
 
-Creators: The proportion n is doing R\&D: \(nR\) Adopters: The remaining
-is going to output X: \((1-n)R\)
+\caption{\label{fig5}Mean and median of Multifactor Productivity by year, 1996 to 2022. The dashed black lines represent the mean and median trend line}\label{fig:fig5}
+\end{figure}
 
-If those firms are thought as a compound of human capital, the creators
-are individuals with the skillset needed to create new technology, while
-the adopters are individuals with enough skillset in produce X in the
-traditional business model. Now, as
+However, this result may not be entirely accurate, as the measurement
+tools available to us today may not be capturing the real impact of
+these technologies. Mainly because multifactor productivity growth is
+measured as a residual, i.e., the part of GDP growth that cannot be
+explained by growth in labor and capital inputs. Traditionally, TFP
+growth has been considered to reflect technological progress, but in
+practice this does not mean that this parameter reflects all the
+benefits.
 
-However, the availability of people with those skills is not something
-that you find at the side of the corner.
+To exemplify this, let's think that a country with an amount R of
+resources can allocate part of them (Creators) to do R\&D, while others
+(Adopters) to produce a certain level of activity or result X.
 
-As the consumers do not be part of the process of production, this have
-been outside of this analysis.
+Creators: Proportion n does R\&D: \(nR\). Adopters: The remainder goes
+to produce X: \((1-n)R\).
 
-\hypertarget{insights-taken-from-this-bilkent-uxfcniversitesi-lecture}{%
-\subsection{\texorpdfstring{{[}\^{}4{]}: Insights taken from this
-\href{https://youtu.be/m3nkTrFF2zs?si=dgPJlvVgQuuQAcL8}{Bilkent
-Üniversitesi
-lecture}}{{[}\^{}4{]}: Insights taken from this Bilkent Üniversitesi lecture}}\label{insights-taken-from-this-bilkent-uxfcniversitesi-lecture}}
+If we think of these companies as a composite of human capital, creators
+are individuals with the necessary skills to create new technologies,
+while adopters are individuals with sufficient skills to produce X in
+the traditional business model. Now, adopters need to acquire new skills
+in order to incorporate the benefits of technology, creating new
+business processes and successfully transitioning their production from
+the old schemes to the new schemes. These adopters are investing in
+intangible assets that the metrics are not reflecting. More importantly,
+adopters need the help of creators to facilitate the adoption process in
+their industries, because it stands to reason that creators are the most
+skilled human capital part of the available resources.
 
-Total Factor Productivity should reflect the exceptional technological
-advance
+This similar approach of dividing efforts into doing R\&D and producing
+the product should be adopted by adapting firms, in the sense that those
+doing R\&D are actually the ones leading the company's successful
+transition to a new business model. In practical terms, from the
+perspective of an adopting company:
 
-Review data: CBInsights - Labour Productivity Growth vs Global
-Investment focused on AI - OECD Productivity Growth - Real Median income
-has stagnated since the late 1990s
+Business Transformers: The ratio n avoids exiting the market: \(nR\).
+Change assimilators: This ratio continues to maximize profit in the new
+business model: \((1-n)R\).
 
-Both capital deepening and total factor productivity (TFP) growth lead
-to labor productivity growth, and both seem to be playing a role in the
-slowdown
+Since consumers are not part of the production process, they have been
+left out of this analysis. However, their acceptance towards the
+consumption of AI-based products and their expected increase in the
+consumption of AI-based services will have a positive impact on economic
+growth.
 
-The old adage that ``past performance is not predictive of future
-results'' applies well to trying to predict productivity growth in the
-years to come, especially in periods of a decade or longer. Historical
-stagnation does not justify forward-looking pessimism. Taken from
-Paradox
-
-C. Intangible capital - capital may not be reflected in the measurements
-of economic growth
-
-AI developing skills: Perception and cognition
+Thus, the intangible assets associated with the transformation process
+are not yet quantified and in the last wave of computerization their
+value was about ten times greater than the direct investments in the
+computer hardware itself \citep{paradox}. Thus, it is plausible that the
+intangibles associated with AI are of comparable or greater magnitude.
 
 \hypertarget{llms-vs.-artificial-general-intelligence-agi}{%
 \section{4. LLMs vs.~Artificial General Intelligence
 (AGI)}\label{llms-vs.-artificial-general-intelligence-agi}}
 
-A. Understanding the difference between LLMs and AGI
+\hypertarget{understanding-the-difference-between-llms-and-agi}{%
+\subsection{Understanding the difference between LLMs and
+AGI}\label{understanding-the-difference-between-llms-and-agi}}
 
 Large Language Models (LLMs) and Artificial General Intelligence (AGI),
 represent distinct approaches to AI. Understanding their differences and
@@ -574,7 +534,9 @@ systems, are designed for continual learning and adaptation. As
 described by \citep{Wang2012Chapter1I} AGI's ability to be generalized
 on fundamentally new areas.
 
-B. Exploring whether AGI is the real General Purpose Technology
+\hypertarget{exploring-whether-agi-is-the-real-general-purpose-technology}{%
+\subsection{Exploring whether AGI is the real General Purpose
+Technology}\label{exploring-whether-agi-is-the-real-general-purpose-technology}}
 
 The question of whether AGI can be considered the real General Purpose
 Technology is soon to become more relevant, as AGI has not yet reached
@@ -600,7 +562,9 @@ transformative power knows no bounds.
 \section{5. Acknowledging Benefits and Limitations of LLMs as
 GPT}\label{acknowledging-benefits-and-limitations-of-llms-as-gpt}}
 
-A. Discussing the potential benefits of LLMs as GPT
+\hypertarget{discussing-the-potential-benefits-of-llms-as-gpt}{%
+\subsection{Discussing the potential benefits of LLMs as
+GPT}\label{discussing-the-potential-benefits-of-llms-as-gpt}}
 
 One of the significant advantages of incorporating LLMs as GPT is the
 potential for substantial productivity gains. LLMs excel in natural
@@ -614,7 +578,10 @@ healthcare, and market analysis, LLMs can assist in extracting valuable
 insights from unstructured data, leading to better-informed decisions
 and strategies.
 
-B. Addressing the limitations and challenges associated with LLMs as GPT
+\hypertarget{addressing-the-limitations-and-challenges-associated-with-llms-as-gpt}{%
+\subsection{Addressing the limitations and challenges associated with
+LLMs as
+GPT}\label{addressing-the-limitations-and-challenges-associated-with-llms-as-gpt}}
 
 While LLMs offer significant potential as GPT, it is essential to
 acknowledge the limitations and challenges associated with their
@@ -628,103 +595,26 @@ the full potential of LLMs.
 \hypertarget{conclusion}{%
 \section{6. Conclusion}\label{conclusion}}
 
-A. Summarizing the main points discussed in the paper B. Emphasizing the
-potential of LLMs as GPT in reshaping industries
+Positive expectations around new technologies that drive development,
+economic growth and profit generation are often accompanied by optimism
+on the part of industry leaders, technology experts and venture
+capitalists. This optimism leads to speculative investments and
+forecasts of future corporate wealth in the financial sector. However,
+as \citep{paradox} suggests, there is no inherent contradiction between
+forward-looking technology optimism and backward-looking disappointment.
+The two can coexist, especially in periods of transformational change.
+This can be attributed to human nature, as individuals want to see their
+expectations fulfilled during their lifetime. However, it takes time for
+society to fully incorporate and benefit from new technologies,
+resulting in a slower rate of assimilation.
 
-The positive expectations surrounding new technologies driving
-development, economic growth, and generating profits are often
-accompanied by optimism from industry leaders, technology experts, and
-venture capitalists. This optimism leads to speculative investments and
-forecasts of future company wealth in the financial sector. However, as
-\citep{paradox} suggests, there is no inherent contradiction between
-forward-looking technological optimism and backward-looking
-disappointment. Both can coexist, particularly during periods of
-transformative change. This can be attributed to human nature, as
-individuals desire to see their expectations fulfilled within their
-lifetime. However, it takes time for society to fully incorporate and
-benefit from new technologies, resulting in a slower pace of
-assimilation.
-
-\hypertarget{bibliography-styles}{%
-\section{Bibliography styles}\label{bibliography-styles}}
-
-Here are two sample references: \citeauthor{Feynman1963118}
-\citetext{\citeyear{Feynman1963118}; \citealp{Dirac1953888}}.
-
-By default, natbib will be used with the \texttt{authoryear} style, set
-in \texttt{classoption} variable in YAML. You can sets extra options
-with \texttt{natbiboptions} variable in YAML header. Example
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{natbiboptions}\KeywordTok{:}\AttributeTok{ longnamesfirst,angle,semicolon}
-\end{Highlighting}
-\end{Shaded}
-
-There are various more specific bibliography styles available at
-\url{https://support.stmdocs.in/wiki/index.php?title=Model-wise_bibliographic_style_files}.
-To use one of these, add it in the header using, for example,
-\texttt{biblio-style:\ model1-num-names}.
-
-\hypertarget{using-csl}{%
-\subsection{Using CSL}\label{using-csl}}
-
-If \texttt{citation\_package} is set to \texttt{default} in
-\texttt{elsevier\_article()}, then pandoc is used for citations instead
-of \texttt{natbib}. In this case, the \texttt{csl} option is used to
-format the references. Alternative \texttt{csl} files are available from
-\url{https://www.zotero.org/styles?q=elsevier}. These can be downloaded
-and stored locally, or the url can be used as in the example header.
-
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
-
-Here is an equation: \[ 
-  f_{X}(x) = \left(\frac{\alpha}{\beta}\right)
-  \left(\frac{x}{\beta}\right)^{\alpha-1}
-  e^{-\left(\frac{x}{\beta}\right)^{\alpha}}; 
-  \alpha,\beta,x > 0 .
-\]
-
-Here is another: \begin{align}
-  a^2+b^2=c^2.
-\end{align}
-
-Inline equations: \(\sum_{i = 2}^\infty\{\alpha_i^\beta\}\)
-
-\hypertarget{tables-coming-from-r}{%
-\section{Tables coming from R}\label{tables-coming-from-r}}
-
-Tables can also be generated using R chunks, as shown in Table
-\ref{tab1} for example.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}\FunctionTok{head}\NormalTok{(mtcars)[,}\DecValTok{1}\SpecialCharTok{:}\DecValTok{4}\NormalTok{], }
-    \AttributeTok{caption =} \StringTok{"}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{label\{tab1\}Caption centered above table"}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{longtable}[]{@{}lrrrr@{}}
-\caption{\label{tab1}Caption centered above table}\tabularnewline
-\toprule\noalign{}
-& mpg & cyl & disp & hp \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-& mpg & cyl & disp & hp \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Mazda RX4 & 21.0 & 6 & 160 & 110 \\
-Mazda RX4 Wag & 21.0 & 6 & 160 & 110 \\
-Datsun 710 & 22.8 & 4 & 108 & 93 \\
-Hornet 4 Drive & 21.4 & 6 & 258 & 110 \\
-Hornet Sportabout & 18.7 & 8 & 360 & 175 \\
-Valiant & 18.1 & 6 & 225 & 105 \\
-\end{longtable}
+Although we are not concluding anything new to what has been mentioned
+before by several authors, it has been worthwhile to review especially
+the position of \citep{paradox} from the vision of the Schumpeterian
+growth model, and some metrics such as the Multifactor productivity and
+investments in AI, which allow us to have more grounded expectations of
+these new technologies, without ignoring the value of the intangible
+assets that are part of this process of economic transition.
 
 \renewcommand\refname{References}
 \bibliography{mybibfile.bib}
