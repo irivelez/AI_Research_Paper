@@ -196,31 +196,53 @@ library(dplyr)
 data_TFP_long <- reshape2::melt(data_TFP, id.vars = "Year")
 data_TFP_long <- data_TFP_long %>% rename(Country = variable)
 
+ggplot(data_TFP_long, aes(x = Year, y = value, color = Country, group = Country)) +
+  geom_line() +
+  geom_smooth(data = filter(data_TFP_long, !is.na(value)), method = "lm", se = FALSE, linewidth = 0.5, linetype = "dashed", color = "black") +
+  labs(title = "Multi Factor Productivity by OECD Country, 1996 to 2022",
+       x = "Year",
+       y = "TFP Value",
+       color = "Country") +
+  theme_minimal() +
+  theme(legend.position = "bottom", axis.text.x = element_text(angle = 45, hjust = 1),
+        plot.title = element_text(size = 10),  # Adjust plot title size
+        axis.text = element_text(size = 8),   # Adjust axis text size
+        legend.text = element_text(size = 8))  # Adjust legend text size
+```
 
-# Creating a column to categorize countries by continents
-data_TFP_long$Continent <- ifelse(data_TFP_long$Country %in% c(
-  "Australia", "New Zealand"), "Oceania",
-  ifelse(data_TFP_long$Country %in% c(
-    "United States", "Canada"), "North America",
-    ifelse(data_TFP_long$Country %in% c(
-      "France", "Germany", "United Kingdom", "Italy", "Spain", "Netherlands", "Belgium", "Sweden", "Switzerland", "Greece", "Portugal", "Austria", "Norway", "Denmark", "Finland", "Ireland", "Luxembourg"), "Europe",
-      ifelse(data_TFP_long$Country %in% c(
-        "Japan", "Korea", "Israel"), "Asia", "Other"
-      )
-    )
-  )
-)
+```{r estat_TFP, echo=FALSE}
+library(dplyr)
 
-# Convert "Continent" to a factor
-data_TFP_long$Continent <- factor(data_TFP_long$Continent)
+data_stat <- data_TFP
 
-# Plotting the data using the continent groupings
-ggplot(data_TFP_long, aes(x = Year, y = value, color = Continent)) +
-  geom_smooth(method = "loess") +
-  scale_x_continuous(breaks = seq(1996, 2022, by = 2)) +
-  labs(title = "Total Factor Productivity Trends by Continent", x = "Year", y = "Total Factor Productivity") +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))  # Adjust x-axis text orientation
+# Calculate mean and median TFP for each year and add a new column 'Mean_TFP'
+data_stat$Median_TFP <- apply(data_stat[, -1], 1, median, na.rm = TRUE)
+data_stat$Mean_TFP <- apply(data_stat[, -1], 1, mean, na.rm = TRUE)
 
+# Selecting only the necessary columns from data_TFP and storing in a new dataset
+data_TFP_selected <- data_stat %>% select(Year, Mean_TFP, Median_TFP)
+```
+
+```{r plot_stat_TFP, echo=FALSE}
+library(ggplot2)
+library(dplyr)
+
+# Long format for easy plotting
+data_TFP_selec_long <- reshape2::melt(data_TFP_selected, id.vars = "Year")
+data_TFP_selec_long <- data_TFP_selec_long %>% rename(Statistic = variable)
+
+ggplot(data_TFP_selec_long, aes(x = Year, y = value, color = Statistic, group = Statistic)) +
+  geom_line() +
+  geom_smooth(data = filter(data_TFP_selec_long, !is.na(value)), method = "lm", se = FALSE, linewidth = 0.5, linetype = "dashed", color = "black") +
+  labs(title = "Mean and Meadian of Multi Factor Productivity, 1996 to 2022",
+       x = "Year",
+       y = "TFP Value",
+       color = "Statistic") +
+  theme_minimal() +
+  theme(legend.position = "bottom", axis.text.x = element_text(angle = 45, hjust = 1),
+        plot.title = element_text(size = 10),  # Adjust plot title size
+        axis.text = element_text(size = 8),   # Adjust axis text size
+        legend.text = element_text(size = 8))  # Adjust legend text size
 ```
 
 - Graph of Investments during the last 10 years and TFP in the US.
