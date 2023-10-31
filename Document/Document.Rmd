@@ -66,7 +66,10 @@ On the other hand, the use of LLMs as a base technology of other tools, such as 
 So, the potential arising of emergent abilities and the wide use of LLMs as enablers of new tools (AI based-software) alongside the spread use of tools such as ChatGPT by a large amount of humans (here: million of users of chatGPT), it could signify a future unseen before by the human beings, because the expansion and pushing of new boarders and limits would be accelerated.
 
 # 2. Generalization Capabilities of LLMs as GPT 
-A. Examining the adoption rate of previous GPTs 
+A. Examining the adoption rate of previous GPTs
+
+Investigating the adoption rate of various GPTs, [@Chen2021HowDL] examined how worker mobility affects the likelihood of an establishment adopting a new general-purpose technolog]. By examining data from over 153,000 establishments between 2010 and 2018, it was observed how these establishments made decisions regarding the adoption of machine learning. The findings from the study showed a significant decline in adoption likelihood when there were facilitations in worker movements.
+
 B. Key factors contributing to the widespread adoption of a technology as a GPT 
 C. Reviewing the literature on the potential of AI as a GPT
 
