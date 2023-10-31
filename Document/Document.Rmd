@@ -69,6 +69,7 @@ So, the potential arising of emergent abilities and the wide use of LLMs as enab
 A. Examining the adoption rate of previous GPTs
 
 Investigating the adoption rate of various GPTs, [@Chen2021HowDL] examined how worker mobility affects the likelihood of an establishment adopting a new general-purpose technolog]. By examining data from over 153,000 establishments between 2010 and 2018, it was observed how these establishments made decisions regarding the adoption of machine learning. The findings from the study showed a significant decline in adoption likelihood when there were facilitations in worker movements.
+According to the [@Helpman1996DiffusionOG], both historical evidence and theoretical models indicate that General Purpose Technologies (GPTs), like the steam engine and electricity, are pivotal for economic progress. The author further demonstrates that the stepwise adoption of a GPT across sectors leads to a dual-phase cycle, ultimately resulting in prolonged economic growth.
 
 B. Key factors contributing to the widespread adoption of a technology as a GPT 
 C. Reviewing the literature on the potential of AI as a GPT
